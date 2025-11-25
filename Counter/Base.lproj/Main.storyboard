@@ -11,12 +11,12 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Counter_new" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgJ-HC-YkE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgJ-HC-YkE" userLabel="resetButton">
                                 <rect key="frame" x="61" y="637" width="280" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="sUj-Nk-0jW"/>
@@ -36,7 +36,7 @@
                                     <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="startButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JEK-PY-ypU"/>
+                                    <action selector="resetButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bxr-Xf-JeT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGr-Sn-thX">
@@ -54,7 +54,7 @@
                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6US-gD-016"/>
+                                    <action selector="plusButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1R3-pV-qcQ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLT-RF-VwX">
@@ -104,7 +104,7 @@
                                     <color key="baseBackgroundColor" systemColor="systemBlueColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="blueButtonTab:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gJx-Ng-VAA"/>
+                                    <action selector="minusButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mmb-vd-jLr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -128,11 +128,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="blueButton" destination="NbX-CF-baO" id="ldS-M4-Hht"/>
-                        <outlet property="button" destination="oGr-Sn-thX" id="u9n-S0-Thj"/>
                         <outlet property="counterLabel" destination="DLT-RF-VwX" id="X4X-dO-Edx"/>
                         <outlet property="historyTextView" destination="bWh-MV-Z1e" id="Q28-GL-d6Y"/>
-                        <outlet property="startButton" destination="tgJ-HC-YkE" id="W1e-Xb-u53"/>
+                        <outlet property="minusButton" destination="NbX-CF-baO" id="hoj-OQ-K4J"/>
+                        <outlet property="plusButton" destination="oGr-Sn-thX" id="fZg-Um-G8b"/>
+                        <outlet property="resetButton" destination="tgJ-HC-YkE" id="fIU-Vt-i9r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -145,16 +145,16 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="separatorColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.53333333333333333" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.2196078431372549" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

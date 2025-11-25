@@ -9,15 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var counterLabel: UILabel!
-    @IBOutlet weak var button: UIButton!
-    @IBOutlet weak var blueButton: UIButton!
-    @IBOutlet weak var startButton: UIButton!
-    @IBOutlet weak var historyTextView: UITextView!
+    @IBOutlet private weak var counterLabel: UILabel!
+    @IBOutlet private weak var plusButton: UIButton!
+    @IBOutlet private weak var resetButton: UIButton!
+    @IBOutlet private weak var minusButton: UIButton!
+    @IBOutlet private weak var historyTextView: UITextView!
     
     private var counter = 0
     
-    let date = DateFormatter()
+   private let date = DateFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,18 +25,19 @@ class ViewController: UIViewController {
         historyTextView.isScrollEnabled = true
         date.dateFormat = "dd.MM.yyyy HH:mm:ss"
     }
+  
     private func textUpdate(text: String) {
         let dateString = date.string(from: Date())
         historyTextView.text += "\(dateString): \(text) \n"
     }
 
-    @IBAction func buttonTap(_ sender: Any) {
+    @IBAction private func plusButtonTap(_ sender: Any) {
         counter += 1
         counterLabel.text = "Значение счётчика: \(counter)"
         textUpdate(text: "значение изменено на +1")
     }
-      
-    @IBAction func blueButtonTab(_ sender: Any) {
+    
+    @IBAction private func minusButtonTap(_ sender: Any) {
        if counter > 0 {
            counter -= 1
            textUpdate(text: "значение изменено на -1")
@@ -46,7 +47,7 @@ class ViewController: UIViewController {
         counterLabel.text = "Значение счётчика: \(counter)"
     }
     
-    @IBAction func startButtonTap(_ sender: Any) {
+    @IBAction private func resetButtonTap(_ sender: Any) {
         counter = 0
         counterLabel.text = "Значение счётчика: \(counter)"
         textUpdate(text: "значение счётчика сброшено")

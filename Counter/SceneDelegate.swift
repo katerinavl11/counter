@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Counter
+//  Counter_new
 //
-//  Created by Katya on 23.11.2025.
+//  Created by Katya on 25.11.2025.
 //
 
 import UIKit
