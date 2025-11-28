@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Counter_new" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgJ-HC-YkE" userLabel="resetButton">
+                                <rect key="frame" x="61" y="637" width="280" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="sUj-Nk-0jW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <backgroundConfiguration key="background"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="🔄">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="AppleColorEmoji"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bxr-Xf-JeT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGr-Sn-thX">
+                                <rect key="frame" x="61" y="428" width="130" height="160"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="+">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Arial-BoldMT"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="plusButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1R3-pV-qcQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLT-RF-VwX">
+                                <rect key="frame" x="106.33333333333333" y="386" width="189.66666666666669" height="27"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Значение счётчика: 0">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Arial-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bWh-MV-Z1e">
+                                <rect key="frame" x="81" y="144" width="240" height="224"/>
+                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="36I-Vv-aV7"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="История изменений: ">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="Arial-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbX-CF-baO">
+                                <rect key="frame" x="211" y="428" width="130" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Vbh-T2-AaW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="-">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Arial-BoldMT"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" systemColor="systemBlueColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="minusButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mmb-vd-jLr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tgJ-HC-YkE" firstAttribute="leading" secondItem="oGr-Sn-thX" secondAttribute="leading" id="16L-OJ-ATl"/>
+                            <constraint firstItem="NbX-CF-baO" firstAttribute="leading" secondItem="oGr-Sn-thX" secondAttribute="trailing" constant="20" id="9bP-hg-jGf"/>
+                            <constraint firstItem="NbX-CF-baO" firstAttribute="firstBaseline" secondItem="oGr-Sn-thX" secondAttribute="baseline" id="ABp-EW-ET7"/>
+                            <constraint firstItem="bWh-MV-Z1e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="81" id="BMF-RR-dxA"/>
+                            <constraint firstItem="bWh-MV-Z1e" firstAttribute="centerX" secondItem="DLT-RF-VwX" secondAttribute="centerX" id="Eae-rE-aEK"/>
+                            <constraint firstItem="bWh-MV-Z1e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FXH-WS-hIL"/>
+                            <constraint firstItem="DLT-RF-VwX" firstAttribute="top" secondItem="bWh-MV-Z1e" secondAttribute="bottom" constant="18" id="NZX-fh-pSb"/>
+                            <constraint firstItem="bWh-MV-Z1e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Svb-2E-NSg"/>
+                            <constraint firstItem="NbX-CF-baO" firstAttribute="top" secondItem="DLT-RF-VwX" secondAttribute="bottom" constant="15" id="a0H-OP-kLP"/>
+                            <constraint firstItem="bWh-MV-Z1e" firstAttribute="centerX" secondItem="tgJ-HC-YkE" secondAttribute="centerX" id="azF-Hj-7at"/>
+                            <constraint firstItem="tgJ-HC-YkE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="dLf-JM-0Be"/>
+                            <constraint firstItem="tgJ-HC-YkE" firstAttribute="trailing" secondItem="NbX-CF-baO" secondAttribute="trailing" id="hCJ-cp-QJT"/>
+                            <constraint firstItem="tgJ-HC-YkE" firstAttribute="top" secondItem="oGr-Sn-thX" secondAttribute="bottom" constant="49" id="rd0-pS-JwP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tgJ-HC-YkE" secondAttribute="bottom" constant="107" id="zvv-cQ-DOl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="DLT-RF-VwX" id="X4X-dO-Edx"/>
+                        <outlet property="historyTextView" destination="bWh-MV-Z1e" id="Q28-GL-d6Y"/>
+                        <outlet property="minusButton" destination="NbX-CF-baO" id="hoj-OQ-K4J"/>
+                        <outlet property="plusButton" destination="oGr-Sn-thX" id="fZg-Um-G8b"/>
+                        <outlet property="resetButton" destination="tgJ-HC-YkE" id="fIU-Vt-i9r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.31343283582089" y="130.43478260869566"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.53333333333333333" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.2196078431372549" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
