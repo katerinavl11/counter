@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		4AE2F5122ED5FBB7005F317E /* Counter_new.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter_new.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE2F5122ED5FBB7005F317E /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		4AE2F5242ED5FBBA005F317E /* Exceptions for "Counter_new" folder in "Counter_new" target */ = {
+		4A3FA2522EDA077200D86FC1 /* Exceptions for "Counter" folder in "Counter" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 4AE2F5112ED5FBB7005F317E /* Counter_new */;
+			target = 4AE2F5112ED5FBB7005F317E /* Counter */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4AE2F5142ED5FBB7005F317E /* Counter_new */ = {
+		4AE2F5142ED5FBB7005F317E /* Counter */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				4AE2F5242ED5FBBA005F317E /* Exceptions for "Counter_new" folder in "Counter_new" target */,
+				4A3FA2522EDA077200D86FC1 /* Exceptions for "Counter" folder in "Counter" target */,
 			);
-			path = Counter_new;
+			path = Counter;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -45,7 +45,7 @@
 		4AE2F5092ED5FBB7005F317E = {
 			isa = PBXGroup;
 			children = (
-				4AE2F5142ED5FBB7005F317E /* Counter_new */,
+				4AE2F5142ED5FBB7005F317E /* Counter */,
 				4AE2F5132ED5FBB7005F317E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +53,7 @@
 		4AE2F5132ED5FBB7005F317E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4AE2F5122ED5FBB7005F317E /* Counter_new.app */,
+				4AE2F5122ED5FBB7005F317E /* Counter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,9 +61,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4AE2F5112ED5FBB7005F317E /* Counter_new */ = {
+		4AE2F5112ED5FBB7005F317E /* Counter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AE2F5252ED5FBBA005F317E /* Build configuration list for PBXNativeTarget "Counter_new" */;
+			buildConfigurationList = 4AE2F5252ED5FBBA005F317E /* Build configuration list for PBXNativeTarget "Counter" */;
 			buildPhases = (
 				4AE2F50E2ED5FBB7005F317E /* Sources */,
 				4AE2F50F2ED5FBB7005F317E /* Frameworks */,
@@ -74,13 +74,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				4AE2F5142ED5FBB7005F317E /* Counter_new */,
+				4AE2F5142ED5FBB7005F317E /* Counter */,
 			);
-			name = Counter_new;
+			name = Counter;
 			packageProductDependencies = (
 			);
 			productName = Counter_new;
-			productReference = 4AE2F5122ED5FBB7005F317E /* Counter_new.app */;
+			productReference = 4AE2F5122ED5FBB7005F317E /* Counter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4AE2F50D2ED5FBB7005F317E /* Build configuration list for PBXProject "Counter_new" */;
+			buildConfigurationList = 4AE2F50D2ED5FBB7005F317E /* Build configuration list for PBXProject "Counter" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4AE2F5112ED5FBB7005F317E /* Counter_new */,
+				4AE2F5112ED5FBB7005F317E /* Counter */,
 			);
 		};
 /* End PBXProject section */
@@ -147,7 +147,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JFNC78QUA8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Counter_new/Info.plist;
+				INFOPLIST_FILE = Counter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -158,7 +158,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "evladimirova.Counter-new";
+				PRODUCT_BUNDLE_IDENTIFIER = evladimirova.Counter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -179,7 +179,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JFNC78QUA8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Counter_new/Info.plist;
+				INFOPLIST_FILE = Counter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -190,7 +190,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "evladimirova.Counter-new";
+				PRODUCT_BUNDLE_IDENTIFIER = evladimirova.Counter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -326,7 +326,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4AE2F50D2ED5FBB7005F317E /* Build configuration list for PBXProject "Counter_new" */ = {
+		4AE2F50D2ED5FBB7005F317E /* Build configuration list for PBXProject "Counter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4AE2F5282ED5FBBA005F317E /* Debug */,
@@ -335,7 +335,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4AE2F5252ED5FBBA005F317E /* Build configuration list for PBXNativeTarget "Counter_new" */ = {
+		4AE2F5252ED5FBBA005F317E /* Build configuration list for PBXNativeTarget "Counter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4AE2F5262ED5FBBA005F317E /* Debug */,
